@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
@@ -14,18 +18,18 @@
     <section id="hero">
         <div class="container">
             <div class="info_bar">
-                <div id="brand"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
                 <div class="info">
                     <img src="images/delivery.png" alt=""> <Strong>Express Delivery <a href="">+1 234 567
-                            890</a></Strong>
+                    890</a></Strong>
                 </div>
             </div>
-            <nav class="menu">
+            <nav class="menu" id="menu">
+                <div id="brand"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
                 <ul class="menu_bar">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">OUR STORY</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+                    <li><a href="#try_today"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> TRY TODAY</a></li>
+                    <li><a href=""><i class="fa fa-bars" aria-hidden="true"></i> MENU</a></li>
+                    <li><a href="#reservation"><i class="fa fa-calendar" aria-hidden="true"></i> RESERVATION</a></li>
                 </ul>
             </nav>
             <div class="hero_content">
@@ -40,24 +44,24 @@
     <section id="try_today" class="pad">
         <div class="container">
             <div class="try_today_main w50">
-                <img src="images/Burger_Image1.png" alt="">
-                <div class="try_content">
+                <img src="images/Burger_Image1.png" class="wow fadeInDown" data-wow-delay="0.3s" alt="">
+                <div class="try_content wow fadeInLeft" data-wow-delay="1s">
                     <strong>TRY IT TODAY</strong>
                     <h2>MOST POPULAR BURGER</h2>
                 </div>
             </div>
             <div class="try_today_side w50">
-                <div class="try_side">
+                <div class="try_side wow fadeInDown" data-wow-delay="0.5s">
                     <img src="images/more_taste.png" alt="">
-                    <div class="try_content">
+                    <div class="try_content  wow fadeInDown" data-wow-delay="1s">
                         <strong>TRY IT TODAY</strong>
                         <h2>MORE FUN <br>MORE TASTE</h2>
                     </div>
                 </div>
 
-                <div class="try_side">
+                <div class="try_side wow fadeInRight" data-wow-delay="0.5s">
                     <img src="images/fresh&chili.png" alt="">
-                    <div class="try_content">
+                    <div class="try_content  wow fadeInLeft" data-wow-delay="1s">
                         <strong>TRY IT TODAY</strong>
                         <h2>FRESH & CHILI</h2>
                     </div>
@@ -69,23 +73,25 @@
     <!-- CHOOSE SECTION : START -->
     <section id="choose">
         <div class="container">
-            <span class="taste_burger">ALWAYS TASTE BURGER</span>
-            <h2 class="title">CHOOSE & ENJOY</h2>
-            <p class="choose_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod vitae in, minus at, eius, eveniet enim minima deleniti sit dolores facilis a quisquam? Dolor culpa omnis quibusdam laborum eos!</p>
+            <span class="taste_burger wow fadeIn" data-wow-delay="0.5s">ALWAYS TASTE BURGER</span>
+            <h2 class="title wow fadeInLeft" data-wow-delay="0.5s">CHOOSE & ENJOY</h2>
+            <p class="choose_p wow fadeInRight" data-wow-delay="0.5s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod vitae in,
+                minus at, eius, eveniet enim minima deleniti sit dolores facilis a quisquam? Dolor culpa omnis quibusdam
+                laborum eos!</p>
             <div class="choose_burger">
-                <div class="burger w30">
+                <div class="burger w30 wow fadeInLeft" data-wow-delay="0.5s">
                     <img src="images/burger2 (1).png" alt="">
                     <h3>HAM BURGER</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid.</p>
                     <a class="btn" href="#">ORDER NOW</a>
                 </div>
-                <div class="burger w30">
+                <div class="burger w30 wow fadeInDown" data-wow-delay="0.5s">
                     <img src="images/burger1 (1) (1).png" alt="">
                     <h3>CHEESE BURGER</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid.</p>
                     <a class="btn" href="#">ORDER NOW</a>
                 </div>
-                <div class="burger w30">
+                <div class="burger w30 wow fadeInRight" data-wow-delay="0.5s">
                     <img src="images/burger2 (1).png" alt="">
                     <h3>HAM BURGER</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid.</p>
@@ -95,23 +101,68 @@
         </div>
     </section>
     <!-- CHOOSE SECTION : END -->
-    <!-- CAROSOUL: not done -->
     <!-- RESERVATION : START -->
     <section id="reservation" class="pad">
         <div class="container">
-            <strong class="res">RESERVATION</strong>
-            <h2 class="title">BOOK YOUR TABLE</h2>
+            <strong class="res wow flipInY" data-wow-delay="1s">RESERVATION</strong>
+            <h2 class="title wow fadeInUp"  data-wow-delay="0.5s">BOOK YOUR TABLE</h2>
             <form action="" class="reservation_form">
-                <input type="text" required placeholder="NAME*">
-                <input type="email" required placeholder="EMAIL*"> 
-                <input type="text" required placeholder="DATE*"> 
-                <input type="text" required placeholder="TIME*"> 
-                <input type="number" required placeholder="PEOPLE">
-                <input type="submit" value="FIND A TABLE" class="btn">
+                <input type="text" class="wow fadeInLeft"  data-wow-delay="0.3s" required placeholder="NAME*">
+                <input type="email" class="wow fadeInRight" data-wow-delay="0.3s" required placeholder="EMAIL*">
+                <input type="text" class="wow fadeInLeft" data-wow-delay="0.7s" required placeholder="DATE*">
+                <input type="text" class="wow fadeInRight" data-wow-delay="0.7s" required placeholder="TIME*">
+                <input type="number" class="wow fadeInLeft" data-wow-delay="1s" required placeholder="PEOPLE">
+                <input type="submit" value="FIND A TABLE" data-wow-delay="1s" class="btn wow fadeInRight">
             </form>
         </div>
     </section>
+    <!-- RESERVATION : END -->
+    <!-- FOOTER : START -->
+    <footer>
+        <div class="container wow fadeInLeft">
+            <div class="footer-sidebar">
+                <img class="footer_img wow fadeInDown" data-wow-delay="1s" src="images/footer-logo.png" alt="Burger House">
+                <div class="footer-content">
+                    <div class="w50  wow fadeInLeft" data-wow-delay="1s">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eligendi suscipit neque
+                            deserunt provident debitis eos quam dicta? Minus quam eos labore sequi culpa facilis commodi
+                            tempore neque itaque quidem!</p>
+                    </div>
+                    <div class="w50  wow fadeInRight" data-wow-delay="1s">
+                        <ul class="footer_info">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><strong>672 Cunningham
+                                    Court,Southfield,USA</strong></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a
+                                    href="mailto:info@burgerhouse.com"><strong>INFO@BURGERHOUSE.COM</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer wow fadeInUp" data-wow-delay="1s">
+                <strong class="copyright">&copy; BURGER HOUSE 2023 ALL RIGHT RESERVED</strong>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER : END -->
+    <script src="javascript/wow.min.js"></script>
     <script src="javascript/script.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile:true,
+            live:true
+        }
+        );
+        new WOW().init();
+    </script>
 </body>
 
 </html>
