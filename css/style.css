@@ -29,7 +29,35 @@
     float: left;
 }
 
+#top{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    height:60px;
+    width: 60px;
+    line-height: 60px;
+    padding-left: 16px;
+    background-color: var(--main-theme);
+    border-radius: 50%;
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: bold;
+    visibility: hidden;
+    transition: all 1s;
+    opacity: 0;
+}
+
+#top.active{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 /* Common CSS */
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -393,7 +421,7 @@ p{
 /* Footer */
 
 footer{
-    padding: 50px 0 0;
+    padding: 50px 0 30px;
 }
 
 footer p{
@@ -482,6 +510,5 @@ footer .w50{
     background-color: var(--title-color);
     color: #fff;
 }
-
 
 
