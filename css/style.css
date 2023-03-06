@@ -35,11 +35,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-body::-webkit-scrollbar-track{
-    overflow-x: auto;
-}
-
-/* html, body {height:100%; width:100%;} */
+html, body {height:100%; width:100%;}
 
 .container{
     width: 1170px;
@@ -397,7 +393,7 @@ p{
 /* Footer */
 
 footer{
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 footer p{
